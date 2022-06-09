@@ -18,7 +18,7 @@ public class FizzBuzzTest {
 
     @Test
     void should_return_fizz_number_multiple_of_3() {
-        Assertions.assertThat(game.fizzBuzzConvertor(3)).isEqualTo("Fizz");
+        Assertions.assertThat(game.fizzBuzzConvertor(6)).isEqualTo("Fizz");
     }
 
 }

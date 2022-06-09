@@ -4,7 +4,7 @@ public class FizzBuzz {
 
     public String fizzBuzzConvertor(int numberToConvert) {
 
-            if (numberToConvert == 3) {
+            if (numberToConvert % 3 == 0) {
                 return "Fizz";
             }
 
