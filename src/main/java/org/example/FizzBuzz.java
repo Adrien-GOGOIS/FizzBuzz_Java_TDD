@@ -8,6 +8,10 @@ public class FizzBuzz {
                 return "Fizz";
             }
 
+            if (numberToConvert % 5 == 0) {
+                return "Buzz";
+            }
+
         return Integer.toString(numberToConvert);
     }
 }

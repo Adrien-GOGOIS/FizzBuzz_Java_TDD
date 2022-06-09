@@ -8,17 +8,18 @@ public class FizzBuzzTest {
     FizzBuzz game = new FizzBuzz();
 
     @Test
-    void should_return_100() {
-        Assertions.assertThat(game.fizzBuzzConvertor(100)).isEqualTo("100");
-    }
-    @Test
-    void should_return_10() {
-        Assertions.assertThat(game.fizzBuzzConvertor(10)).isEqualTo("10");
+    void should_return_1() {
+        Assertions.assertThat(game.fizzBuzzConvertor(1)).isEqualTo("1");
     }
 
     @Test
     void should_return_fizz_number_multiple_of_3() {
         Assertions.assertThat(game.fizzBuzzConvertor(6)).isEqualTo("Fizz");
+    }
+
+    @Test
+    void should_return_buzz_number_multiple_of_5() {
+        Assertions.assertThat(game.fizzBuzzConvertor(5)).isEqualTo("Buzz");
     }
 
 }
