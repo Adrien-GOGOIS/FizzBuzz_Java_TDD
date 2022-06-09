@@ -6,24 +6,26 @@ public class FizzBuzz {
 
         this.numberToConvert = numberToConvert;
 
-        if (isMultipleOf15()) { return "FizzBuzz"; }
+        if (isMultipleOfFifteen()) { return "FizzBuzz"; }
 
-        if (isMultipleOf5()) { return "Buzz"; }
+        if (isMultipleOfFive()) { return "Buzz"; }
 
-        if (isMultipleOf3()) { return "Fizz"; }
+        if (isMultipleOfThree()) { return "Fizz"; }
 
-        return Integer.toString(numberToConvert);
+        return IntegerToStringConverter();
     }
 
-    private boolean isMultipleOf15() {
+    private boolean isMultipleOfFifteen() {
         return numberToConvert % 15 == 0;
     }
 
-    private boolean isMultipleOf5() {
+    private boolean isMultipleOfFive() {
         return numberToConvert % 5 == 0;
     }
 
-    private boolean isMultipleOf3() {
+    private boolean isMultipleOfThree() {
         return numberToConvert % 3 == 0;
     }
+
+    private String IntegerToStringConverter() { return Integer.toString(numberToConvert); }
 }
