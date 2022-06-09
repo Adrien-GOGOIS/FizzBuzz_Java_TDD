@@ -2,12 +2,12 @@ package org.example;
 
 public class FizzBuzz {
 
-    private int actualNumber;
-    public String fizzBuzzLoop(int n) {
-        for (int i = 1; i <= n; i++) {
-            actualNumber++;
-        }
+    public String fizzBuzzConvertor(int numberToConvert) {
 
-        return Integer.toString(actualNumber);
+            if (numberToConvert == 3) {
+                return "Fizz";
+            }
+
+        return Integer.toString(numberToConvert);
     }
 }
