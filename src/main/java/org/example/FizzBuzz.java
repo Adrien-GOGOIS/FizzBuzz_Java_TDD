@@ -1,7 +1,9 @@
 package org.example;
 
 public class FizzBuzz {
+
     private int numberToConvert;
+
     public String fizzBuzzConvertor(int numberToConvert) {
 
         this.numberToConvert = numberToConvert;
