@@ -22,4 +22,11 @@ public class FizzBuzzTest {
         Assertions.assertThat(game.fizzBuzzConvertor(5)).isEqualTo("Buzz");
     }
 
+    @Test
+    void should_return_buzz_number_multiple_of_15() {
+        Assertions.assertThat(game.fizzBuzzConvertor(15)).isEqualTo("FizzBuzz");
+        Assertions.assertThat(game.fizzBuzzConvertor(30)).isEqualTo("FizzBuzz");
+        Assertions.assertThat(game.fizzBuzzConvertor(75)).isEqualTo("FizzBuzz");
+    }
+
 }
