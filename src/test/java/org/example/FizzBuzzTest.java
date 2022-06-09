@@ -10,16 +10,19 @@ public class FizzBuzzTest {
     @Test
     void should_return_1() {
         Assertions.assertThat(game.fizzBuzzConvertor(1)).isEqualTo("1");
+        Assertions.assertThat(game.fizzBuzzConvertor(32)).isEqualTo("32");
     }
 
     @Test
     void should_return_fizz_number_multiple_of_3() {
         Assertions.assertThat(game.fizzBuzzConvertor(6)).isEqualTo("Fizz");
+        Assertions.assertThat(game.fizzBuzzConvertor(42)).isEqualTo("Fizz");
     }
 
     @Test
     void should_return_buzz_number_multiple_of_5() {
         Assertions.assertThat(game.fizzBuzzConvertor(5)).isEqualTo("Buzz");
+        Assertions.assertThat(game.fizzBuzzConvertor(100)).isEqualTo("Buzz");
     }
 
     @Test
