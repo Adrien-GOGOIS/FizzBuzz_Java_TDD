@@ -2,32 +2,28 @@ package org.example;
 
 public class FizzBuzz {
 
-    private int numberToConvert;
-
     public String fizzBuzzConvertor(int numberToConvert) {
 
-        this.numberToConvert = numberToConvert;
+        if (isMultipleOfFifteen(numberToConvert)) { return "FizzBuzz"; }
 
-        if (isMultipleOfFifteen()) { return "FizzBuzz"; }
+        if (isMultipleOfFive(numberToConvert)) { return "Buzz"; }
 
-        if (isMultipleOfFive()) { return "Buzz"; }
+        if (isMultipleOfThree(numberToConvert)) { return "Fizz"; }
 
-        if (isMultipleOfThree()) { return "Fizz"; }
-
-        return IntegerToStringConverter();
+        return IntegerToStringConverter(numberToConvert);
     }
 
-    private boolean isMultipleOfFifteen() {
+    private boolean isMultipleOfFifteen(int numberToConvert) {
         return numberToConvert % 15 == 0;
     }
 
-    private boolean isMultipleOfFive() {
+    private boolean isMultipleOfFive(int numberToConvert) {
         return numberToConvert % 5 == 0;
     }
 
-    private boolean isMultipleOfThree() {
+    private boolean isMultipleOfThree(int numberToConvert) {
         return numberToConvert % 3 == 0;
     }
 
-    private String IntegerToStringConverter() { return Integer.toString(numberToConvert); }
+    private String IntegerToStringConverter(int numberToConvert) { return Integer.toString(numberToConvert); }
 }
